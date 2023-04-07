@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Tienda.png");
+    background-size: cover; 
+    font-family: sans-serif;
+    height: 100vh;
+}
+.login-box {
+    width: 420px;
+    height: 520px;
+    background: black;
+    box-shadow: 3px 3px black;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-radius:30px; 
+    padding: 90px 60px;
+    
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #b80f22;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius:30px; 
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-box a:hover{
+    text-decoration: underline;
+}
+
+hr.margin-40[data-v-21685d1f]{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+hr[data-v-21685d1f] {
+    border-color: var(--page-font-color);
+    opacity: .15;
+}
+
+hr {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+span{
+    font-size: 20px;
+}
+
+.Register[type="submit"]{
+    margin: 1em 0;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #b80f22;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius:30px; 
+}
+
