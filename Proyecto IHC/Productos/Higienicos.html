@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Higienicos</title>
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="../Carrito/estilo.css">
+    <script src="../Carrito/app.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/dd3a66fdeb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="icon" href="../Imagenes/Logo.png">
 </head>
 <body>
     <header>
-        <!--Carrito-->
-
                 <!--Titulo-->
                 <div class="container-fluid ">
                     <div class="row">
@@ -22,16 +22,13 @@
                             <h1>Abarrotes ibarra</h1>
                         </div>
                         <div class="col-1 lun iniciar"> 
-                            <a class="bi bi-person-fill user" style="cursor: pointer;" href="../Login.html"></a>
+                            <a class="bi bi-person-fill user" style="cursor: pointer;" href="../Cuenta/Login.html"></a>
                         </div>
                         <div class="col-1 lin">
-                            <a class="bi bi-basket bolsa" style="cursor: pointer;" href="../Login.html"></a>
+                            <a class="bi bi-basket bolsa" style="cursor: pointer;" href="#"></a>
                         </div>
                     </div>
-
-                            </div>
-                        </div>
-                    </div>
+                </div>
             </header>
             <!--Botones-->
             <nav class="Botones">
@@ -43,45 +40,131 @@
                             <li><a href="Comestibles.html">Comestibles</a> </li>
                             <li><a href="Higiene.html">Higiene</a> </li>
                             <li><a href="Limpieza.html">Limpieza</a> </li>
-                            <li><a href="Higiene.html">Higienicos</a> </li>
+                            <li><a href="Higienicos.html">Higienicos</a> </li>
                             <li><a href="Mascotas.html">Mascotas</a> </li>
                             <li><a href="DulcesYBotanas.html">Dulces Y Botanas</a> </li>
                         </ul>
                     </li>
                     <li><a href="Promociones.html">Promociones</a> </li>
-                    <li><a href="../Quienessomos.html">¿Quienes somos?</a> </li>
+                    <li><a href="Quienessomos.html">¿Quienes somos?</a> </li>
                 </ul>
             </nav>
 
-    <!--:::PIE DE PAGINA::::!-->
+            <br>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Papel kleenex (1pz)</span>
+                <img src="../Imagenes/Kleenex.jpg" alt="kleenex" class="img-item">
+                <span class="precio-item"> $8.00 </span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+
+            <div class="item">
+                <span class="titulo-item">Papel petalo (4pz)</span>
+                <img src="../Imagenes/Petalo.jpg" alt="Petalo" class="img-item">
+                <span class="precio-item"> $25.50 </span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+
+            <div class="item">
+                <span class="titulo-item">Papel Suavel (4pz)</span>
+                <img src="../Imagenes/Suavel.jpg" alt="Suavel" class="img-item">
+                <span class="precio-item"> $20.10 </span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">PANTIPROTECTORES KOTEX (14pz)</span>
+                <img src="../Imagenes/Kotex.jpg" alt="Kotex" class="img-item">
+                <span class="precio-item"> $11.90 </span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+
+            <div class="item">
+                <span class="titulo-item">PANTIPROTECTORES REGULAR (16pz)</span>
+                <img src="../Imagenes/SabaRegular.jpg" alt="SabaRegular" class="img-item">
+                <span class="precio-item"> $14.50 </span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+
+            <div class="item">
+                <span class="titulo-item">SABA BUENAS NOCHES (8pz)</span>
+                <img src="../Imagenes/SabaNoche.jpg" alt="SabaNoche" class="img-item">
+                <span class="precio-item"> $34.99 </span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">PAÑAL BEBIN GRANDE (3pz)</span>
+                <img src="../Imagenes/PañalGrande.jpg" alt="PañalGrande" class="img-item">
+                <span class="precio-item"> $13.80 </span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+
+            <div class="item">
+                <span class="titulo-item">PAÑAL ABSORSEC GRANDE (40pz)</span>
+                <img src="../Imagenes/PañalAbsorsec.jpg" alt="PañalAbsorsec" class="img-item">
+                <span class="precio-item"> $155.00 </span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+
+        <div class="item">
+            <span class="titulo-item">SERVILLETA DELSEY (220pz)</span>
+            <img src="../Imagenes/Delsey.jpg" alt="Delsey" class="img-item">
+            <span class="precio-item"> $280.00 </span>
+            <button class="boton-item">Agregar al carrito</button>
+        </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+            
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Pie De Pagina-->
     <footer class="pie-pagina tag">
         <div class="informacion-general">
             <div class="box">
                 <br>
                 <h2>Contacto</h2>
-                <p><i class="fa-solid fa-phone"></i> 000 000 000</p>
-                <p>AbarrotesIbarra@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 123 456 789</p>
+                <p><i class="bi bi-envelope-fill"> AbarrotesIbarra@gmail.com</i></p>
                 <br>
             </div>
             <div class="box">
                 <figure>
-                    <a href="#">
-                        <img src="https://images.emojiterra.com/openmoji/v13.1/128px/2b1c.png" alt="">
+                    <a>
+                        <img src="../Imagenes/Logo.png" alt="Logo">
                     </a>
                 </figure>
             </div>
             <div class="box">
                 <br>
-                <h2>Redes</h2>
+                <h2>Redes (No disponibles por el momento)</h2>
                 <div class="redes-sociales">
-                    <a id="facebook" href="" class="fa fa-facebook"></a>
-                    <a id="instagram" href="" class="fa fa-instagram "></a>
+                    <a id="facebook" href="#" class="fa fa-facebook"></a>
+                    <a id="instagram" href="#" class="fa fa-instagram "></a>
                     <a id="twitter" href="#" class="fa fa-twitter"></a>
                 </div>
             </div>
         </div>
         <div class="informacion-legal">
-            <small>&copy;2022 <b>Abarrotes Ibarra.</b> - Todos Los Derechos Reservados</small>
+            <small>&copy;2023 <b>Abarrotes Ibarra.</b> - Todos Los Derechos Reservados <b>-11/04/2023</b></small>
         </div>
     </footer>
 </body>
