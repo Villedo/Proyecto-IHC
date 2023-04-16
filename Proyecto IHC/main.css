@@ -251,8 +251,10 @@ header {
   margin-right: 77%;
 
  }
+.prueba123{
+  background-color: red;
+}
 
- 
   
 /* Estilos del footer */
   .pie-pagina {
@@ -389,3 +391,55 @@ header {
           display: none !important;
         }
       }
+      @media screen and (max-width: 800px){
+
+        h1::after, h1::before {
+            display: none;
+        }
+        .pie-pagina .informacion-general{
+            display: flex;
+            width: 30%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 5px;
+        }
+        .redes-sociales{
+            margin-bottom: 20px;
+        }
+    }
+    @media screen and (max-width: 522px){
+
+      h1::after, h1::before {
+          display: none;
+      }
+      .pie-pagina .informacion-general{
+          display: flex;
+          width: 50%;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          grid-gap: 5px;
+      }
+      .redes-sociales{
+          margin-bottom: 20px;
+      }
+  }
+
+  @media screen and (max-width: 312px){
+
+    h1::after, h1::before {
+        display: none;
+    }
+    .pie-pagina .informacion-general{
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 5px;
+    }
+    .redes-sociales{
+        margin-bottom: 20px;
+    }
+}
