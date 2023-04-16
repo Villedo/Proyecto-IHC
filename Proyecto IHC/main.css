@@ -251,9 +251,6 @@ header {
   margin-right: 77%;
 
  }
-.prueba123{
-  background-color: red;
-}
 
   
 /* Estilos del footer */
@@ -424,6 +421,28 @@ header {
       .redes-sociales{
           margin-bottom: 20px;
       }
+      nav ul {
+        flex-direction: column;
+        }
+      
+      nav li:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+        }
+    
+      nav a {
+      padding: 10px 15px;
+      font-size: 16px;
+      }
+      
+      ul li {
+      display: block;
+      }
+      
+      
+      ul li ul.dropdown li {
+      width: 100%;
+      }
   }
 
   @media screen and (max-width: 312px){
@@ -441,5 +460,38 @@ header {
     }
     .redes-sociales{
         margin-bottom: 20px;
+    }
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    ul li ul.dropdown li {
+      width: 100%;
+    }
+  
+    ul li ul.dropdown {
+      position: static;
+      display: none;
+    }
+  
+    ul li:hover ul.dropdown {
+      display: block;
+    }
+    
+    nav a {
+      padding: 10px;
     }
 }
